@@ -20,15 +20,14 @@ const CounterApp = () => {
                         onClick={() => setCount(count + 1)}
                         className="bg-blue-500 text-white px-4 py-2 rounded"
                     >
-                        +
+                        Increses
                     </button>
                     <button
                         onClick={() => setCount(count - 1)}
                         className="bg-red-500  text-white px-4 py-2 rounded"
                     >
-                        -
+                        Decreases
                     </button>
-                </div>
 
                 <div className="relative group">
                     <button
@@ -42,7 +41,9 @@ const CounterApp = () => {
                     </span>
                 </div>
             </div>
+            </div>
         </div>
+
     );
 };
 
