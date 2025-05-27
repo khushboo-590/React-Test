@@ -23,7 +23,7 @@ const Contact = () => {
                     <div>
                         <input
                             type="email"
-                            placeholder="your Email"
+                            placeholder="Your Email"
                             className="w-full p-3 border border-gray-300 rounded-lg"
                         />
                     </div>

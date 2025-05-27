@@ -1,5 +1,5 @@
 import React from 'react';
-import dp from '../assets/images/png/dp.webp'
+import img from '../assets/images/png/dp.webp'
 import ProfileCard from "../components/ProfileCard";
 
 
@@ -8,8 +8,8 @@ const Home = () => (
         <div className="min-h-screen  p-6 bg-gray-400">
             <ProfileCard
                 name="Khushboo"
-                image={dp}
-                bio="Frontend Developer | Learner"
+                image={img}
+                bio="Frontend Developer / Learner"
                 contact="khushbook48879@gmail.com"
             />
         </div>
