@@ -6,7 +6,7 @@ import { imageData } from "../utils/helper";
 
 const Carousel = () => {
     return (
-        <div className="max-w-5xl  py-8">
+        <div className="m  py-8 max-w-[1140px] mx-auto">
             <Swiper
                 modules={[Autoplay]}
                 autoplay={{ delay: 3000 }}

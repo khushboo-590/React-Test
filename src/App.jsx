@@ -14,16 +14,17 @@ import CounterApp from "./components/CounterApp";
 function App() {
   return (
     <>
-      <NavBar />
-      <div className="p-4 mx-auto ">
+      <div className="flex justify-center items-center h-16 bg-gray-400 shadow-md">
+        <NavBar />
+        </div>
+      <div className="p-4 mx-auto  bg-gray-400">
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-
-      {/* <div className="min-h-screen  p-6">
+      <div className="min-h-screen  p-6 bg-gray-400">
               <ProfileCard
                 name="Khushboo"
                 image={dp}
@@ -31,15 +32,16 @@ function App() {
                 contact="khushbook4979@gmail.com"
         />
         </div>
-        */}
-      <ProductList />
-      <div className=" max-w-[1140px] mx-auto p-4">
+       <div className="p-4 bg-gray-400">
+        <ProductList />
+        </div>
+      <div className="  p-4 bg-gray-400">
         <h1 className="text-5xl font-bold mb-4 text-center text-blue-600 pt-10"> Images</h1>
         <Carousel />
       </div>
-      {/* <div className="max-w-[1140px] mx-auto p-4">
+      <div className="  p-4 bg-gray-400">
         <CounterApp />
-      </div> */}
+      </div>
     </>
   );
 }
