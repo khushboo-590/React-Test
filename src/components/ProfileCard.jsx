@@ -8,7 +8,7 @@ const ProfileCard = ({ name, image, bio, contact }) => {
     return (
         <div className="max-w-md mx-auto mt-10 ">
             <h1 className="text-5xl text-blue-600 font-bold text-center mb-3">Profile Card</h1>
-        <div className="border p-4 rounded-md shadow-md mx-auto bg-white text-center max-w-[420px] :h-[500px] mt-20">
+        <div className="border p-4 rounded-md shadow-md mx-auto bg-white text-center max-w-[420px] h-[440px] mt-20">
             <img src={image} alt={name} className=" mx-auto rounded-full mb-4 w-50 h-50" />
             <h2 className="text-4xl font-bold text-green-700">{name}</h2>
             <p className="text-lg text-gray-600">{bio}</p>
