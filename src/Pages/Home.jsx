@@ -1,13 +1,18 @@
 import React from 'react';
+import dp from '../assets/images/png/dp.webp'
+import ProfileCard from "../components/ProfileCard";
+
 
 const Home = () => (
     <div className="max-w-[1140px] mx-auto p-6   mt-10 ">
-        <h1 className="text-4xl font-extrabold mb-6 text-center text-black">Home</h1>
-        <p className="text-gray-700 leading-relaxed text-lg text-center p-3">
-            This is the Home page. Here you can introduce your application or organization,
-            highlight key features, and engage your visitors with a warm welcome message.
-            Use this space to set the tone and share your vision.
-        </p>
+        <div className="min-h-screen  p-6 bg-gray-400">
+            <ProfileCard
+                name="Khushboo"
+                image={dp}
+                bio="Frontend Developer | Learner"
+                contact="khushbook48879@gmail.com"
+            />
+        </div>
        
     </div>
 );
