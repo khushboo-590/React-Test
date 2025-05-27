@@ -7,9 +7,7 @@ const Contact = () => {
             <p className="text-gray-600 text-center mb-6">
                 If you have any questions, feel free to reach out via email:
             </p>
-            <p className="text-center text-indigo-600 font-semibold">
-                support@example.com
-            </p>
+           
         </div>
     );
 };
