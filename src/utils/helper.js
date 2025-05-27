@@ -25,21 +25,22 @@ export const imageData = [
  export const products = [
     {
         id: 1,
-        name: "Product A",
+        name: "Apple",
         price: "$50",
-        features: ["Feature 1", "Feature 2", "Feature 3"],
+        features: ["Fresh", "Red"],
     },
     {
         id: 2,
-        name: "Product B",
-        price: "$75",
-        features: ["Feature A", "Feature B"],
+        name: "Bread",
+        price: "$20",
+        features: ["Soft", "Brown"],
     },
     {
         id: 3,
-        name: "Product C",
-        price: "$100",
-        features: ["Feature X", "Feature Y", "Feature Z", "Feature W"],
+        name: "Milk",
+        price: "$30",
+        features: ["Fresh", "Cold"],
     },
 ];
+      
   
