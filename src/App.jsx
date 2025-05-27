@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="p-4 ">
+      <div className="p-4 mx-auto ">
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -33,11 +33,11 @@ function App() {
         </div>
         */}
       <ProductList />
-      {/* <div className=" max-w-[1140px] mx-auto p-4">
-        <h1 className="text-5xl font-bold mb-4 text-center text-red-600">Nature Images</h1>
+      <div className=" max-w-[1140px] mx-auto p-4">
+        <h1 className="text-5xl font-bold mb-4 text-center text-blue-600 pt-10"> Images</h1>
         <Carousel />
       </div>
-      <div className="max-w-[1140px] mx-auto p-4">
+      {/* <div className="max-w-[1140px] mx-auto p-4">
         <CounterApp />
       </div> */}
     </>

@@ -1,16 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { imageData } from "../utils/helper";
 
 const Carousel = () => {
     return (
-        <div className="max-w-5xl mx-auto py-8">
+        <div className="max-w-5xl  py-8">
             <Swiper
-                modules={[Pagination, Autoplay]}
-                pagination={{ clickable: true }}
+                modules={[Autoplay]}
                 autoplay={{ delay: 3000 }}
                 loop={true}
                 spaceBetween={20}
@@ -19,19 +17,20 @@ const Carousel = () => {
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
                 }}
-                className="pb-12" 
+                className="pb-12"
             >
                 {imageData.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <div className="p-4 bg-white shadow-md rounded-md text-center h-full flex flex-col justify-between">
+                        <div className="relative group rounded-xl overflow-hidden shadow-lg">
                             <img
-                                src={item.src}
+                                src={item.image}
                                 alt={item.title}
-                                className="w-full h-64 object-cover rounded mb-4"
+                                className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                             />
-                            <h3 className="text-lg font-semibold text-gray-700 mb-8">
-                                {item.title}
-                            </h3>
+                            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent text-white text-center py-5 px-3 min-h-24 transition-all duration-500 group-hover:translate-y-full">
+                                <h3 className="text-lg font-semibold tracking-wide">{item.title}</h3>
+                            </div>
+
                         </div>
                     </SwiperSlide>
                 ))}
