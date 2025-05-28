@@ -1,33 +1,27 @@
-import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
     const location = useLocation();
+    const isActive = (path) => location.pathname === path;
+
+    const getClass = (path) =>
+        `font-bold justify-center text-center text-xl transition duration-300 ${isActive(path) ? 'text-red-400' : 'text-gray-600'
+        }`;
 
     return (
-        <nav className="flex items-center gap-10   mx-auto   max-w-[1140px]  pt-5">
-            <Link
-                to="/home"
-                className={`font-bold justify-center text-center text-xl ${location.pathname === '/home' ? 'text-red-400 ' : 'text-gray-600'}`}
-            >
+        <nav className="flex items-center gap-10 mx-auto max-w-[1140px] pt-5">
+            <NavLink to="/home" className={getClass('/home')}>
                 Home
-            </Link>
+            </NavLink>
 
-            <Link
-                to="/about"
-                className={`font-bold justify-center text-center text-xl ${location.pathname === '/about' ? 'text-red-400 ' : 'text-gray-600'}`}
-            >
+            <NavLink to="/about" className={getClass('/about')}>
                 About
-            </Link>
+            </NavLink>
 
-            <Link
-                to="/contact"
-                className={`font-bold  justify-center text-center  text-xl ${location.pathname === '/contact' ? 'text-red-400 ' : 'text-gray-600'}`}
-            >
+            <NavLink to="/contact" className={getClass('/contact')}>
                 Contact
-            </Link>
-
-          
+            </NavLink>
         </nav>
     );
 };
