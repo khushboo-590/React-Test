@@ -3,6 +3,9 @@ import img1 from '../assets/images/png/images.jpeg'
 import img2 from '../assets/images/png/images 2.jpeg'
 import img3 from '../assets/images/png/images 3.jpeg'
 import img4 from '../assets/images/png/images 4.jpeg'
+import tv1 from '../assets/images/png/tv1.webp'
+import tv2 from '../assets/images/png/tv2.jpg'
+import remote from '../assets/images/png/remote.png'
 
 
 
@@ -14,25 +17,30 @@ export const imageData = [
 ];
   
 
- export const products = [
+export const products = [
     {
         id: 1,
-        name: "Apple",
-        price: "$50",
-        features: ["Fresh", "Red"],
+        name: "Samsung Smart TV",
+        price: "$599",
+        image: tv1,
+        features: ["4K UHD", "55 inch", "Tizen OS"],
     },
     {
         id: 2,
-        name: "Bread",
-        price: "$20",
-        features: ["Soft", "Brown"],
+        name: "LG OLED TV",
+        price: "$899",
+        image:  tv2,
+        features: ["OLED Display", "Smart Features", "Wall Mountable"],
     },
     {
-        id: 3,
-        name: "Milk",
-        price: "$30",
-        features: ["Fresh", "Cold"],
-    },
+        id: 4,
+        name: "TV Remote (Universal)",
+        price: "$25",
+        image: remote,
+        features: ["Infrared", "Battery Included", "Compatible with all brands"],
+    }
+   
 ];
-      
+
+    
   
