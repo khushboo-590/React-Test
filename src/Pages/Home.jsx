@@ -4,8 +4,8 @@ import ProfileCard from "../components/ProfileCard";
 
 
 const Home = () => (
-    <div className="max-w-[1140px] mx-auto p-6   mt-10 ">
-        <div className="min-h-screen  p-6 bg-gray-400">
+    <div className="max-w-[1140px] mx-auto   mt-10 ">
+        <div className=" bg-gray-400">
             <ProfileCard
                 name="Khushboo"
                 image={img}
