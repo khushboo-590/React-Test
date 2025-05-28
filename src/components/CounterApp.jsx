@@ -15,32 +15,34 @@ const CounterApp = () => {
                     Count: {count}
                 </div>
 
-                <div className="flex justify-center gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 max-w-md mx-auto">
                     <button
                         onClick={() => setCount(count + 1)}
-                        className="bg-blue-500 text-white px-4 py-2 rounded"
+                        className="bg-blue-500 text-white px-4 py-2 rounded w-full"
                     >
-                        Increses
-                    </button>
-                    <button
-                        onClick={() => setCount(count - 1)}
-                        className="bg-red-500  text-white px-4 py-2 rounded"
-                    >
-                        Decreases
+                        Increase
                     </button>
 
-                <div className="relative group">
                     <button
-                        onClick={() => setCount(0)}
-                        className={`text-white px-4 py-2 rounded ${count === 0 ? "bg-gray-400" : "bg-green-500"}`}
+                        onClick={() => setCount(count - 1)}
+                        className="bg-red-500 text-white px-4 py-2 rounded w-full"
                     >
-                        Reset 
+                        Decrease
                     </button>
-                    <span className="absolute -top-5 left-1/2 -translate-x-1/2 text-xs bg-black text-white px-2 py-1 rounded hidden group-hover:block z-10">
-                        Reset position
-                    </span>
+
+                    <div className="relative group w-full">
+                        <button
+                            onClick={() => setCount(0)}
+                            className={`text-white px-4 py-2 rounded w-full ${count === 0 ? "bg-gray-400" : "bg-green-500"}`}
+                        >
+                            Reset
+                        </button>
+                        <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs bg-black text-white px-2 py-1 rounded hidden group-hover:block z-10">
+                            Reset position
+                        </span>
+                    </div>
                 </div>
-            </div>
+
             </div>
         </div>
 
